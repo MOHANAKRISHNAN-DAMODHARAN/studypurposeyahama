@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YES YAHAMA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&family=Rubik:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        width: 100%;
+        height: 100px;
+        background-color: black;
+    }
+    .logo{
+        margin-left: 10px;
+        padding-bottom: 5px;
+        float: left;
+    }
+    header .logo
+                 {
+             animation-name: logo;
+             animation-duration: 5s;
+             animation-direction:alternate;
+             animation-iteration-count: infinite;
+        }
+        @keyframes logo
+        {
+            from{
+                transform:translate(0px)
+            }
+            to
+            {
+                transform:translate(300px)
+            }
+        }
+    nav ul{
+        float: right;
+        padding: 35px 50px 50px 50px;
+    }
+    
+    nav ul li{
+        display:inline;
+        margin: 30px 30px 30px 30px;
+    }
+    nav ul li a{
+        color: red;
+        text-decoration:none;
+        font-style: italic;
+        font-family: 'Rubik', sans-serif;
+        font-size: 25px;
+            }
+   
+     nav ul li a:hover
+        {
+            color:yellow;
+            text-shadow: 5px 5px 10px rgb(233, 233, 187);
+
+        }
+        .main{
+            background-color: black;
+        }
+        .banner{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    .trending
+    {
+        color: red;
+        text-decoration:none;
+        font-style: italic;
+        font-family: 'Rubik', sans-serif;
+        font-size:55px;
+        text-align: center;
+        padding-top: 20px;
+        }
+
+    .card { 
+            display:flex;
+            background-position: center;
+         }
+    .card1,
+    .card2,
+    .card3
+        {
+            width: 30%;
+            color:black;
+            text-align: center;
+            transition: all;
+            transition-duration:.7s;
+            padding: 20px;
+        }
+    .card1:hover,
+    .card2:hover,
+    .card3:hover
+        {
+            transform: scale(1.05);
+            color:rgb(255, 0, 0);
+            font-size:medium;
+        }
+        footer {
+            width: 100%;
+            height: 400px;
+            background-color:black;
+            color:red;
+            padding: 20px;
+            padding-top:50px;
+            font-style: italic;
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+        }
+        
+        footer .footer1 {
+            display: flex;
+            justify-content: center;
+        }
+        
+        footer .footer2 {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            padding-bottom: 30px;
+        }
+        
+        footer .footer1 .foot {
+            width: 20%;
+        }
+        
+        footer .footer2 .foot {
+            width: 20%;
+        }
+        
+        footer .foot ul {
+            list-style-type: none;
+        }
+        footer .foot h2{
+            margin-bottom: 10px;
+            transition: all;
+            transition-duration: 100ms;
+        }
+        footer .foot h2::after{
+            content: "";
+            width:opx;
+            position:absolute;
+            top: -3px;
+            background-color: chartreuse;
+            height: 1px;
+            transition: all;
+            transition-duration: 1s;
+        }
+        footer .foot h2:hover:after{
+            content: "";
+            width: 170px;;
+            display: block;
+            position:relative;
+            top: -3px;
+            background-color: chartreuse;
+            height: 1px;
+            
+        }
+        
+        footer .foot ul li a {
+            color: cornsilk;
+            text-decoration: none; 
+            font-style: italic;
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+        }
+</style>
+<body>
+    <header>
+      <div class="logo">
+          <img src="images/yamahalogo.jpg" alt="LOGO"  width="220px" height="100px">
+          </div>
+      <nav class="navig" >
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">DEALS</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">HELP</a></li>
+        </ul>
+      </nav>
+    </header>
+     <hr>
+<div class="main">
+
+    <div class="banner" >
+        <video autoplay muted loop width="100%" height="60%" >
+            <source src="images/video.mp4" type="video/mp4">
+        </video>  
+       
+    </div><hr>
+
+    <div>
+        <h1 class="trending">NEW ARRIVALS</h1>
+        </div>
+    <div class="card wow animate__animated animate__pulse ">
+    
+        <div class="card1"> 
+            <img src="images/2022-Yamaha-YZF-R7-Render.jpg" width="100%" height="400px" alt="sp">
+            <h1>YZF_R7</h1>
+        </div>
+    
+        <div class="card2"> 
+            <img src="images/scooterimage.jpg" width="100%" height="400px" alt="wi">
+            <h1>ZUMA 125</h1>
+        </div>
+
+        <div class="card3"> 
+            <img src="images/2022-Yamaha-XSR900-Legend-Blue.jpg" width="100%" height="400px" alt="na">
+            <h1>XSR900</h1>
+        </div>
+    </div>
+<div class="card wow animate__animated animate__pulse ">
+
+    <div class="card1"> 
+        <img src="images/2022-Yamaha-YZF-R7-Render.jpg" width="100%" height="400px" alt="sp">
+        <h1>YZF_R7</h1>
+    </div>
+
+    <div class="card2"> 
+        <img src="images/scooterimage.jpg" width="100%" height="400px" alt="wi">
+        <h1>ZUMA 125</h1>
+    </div>
+
+    <div class="card3"> 
+        <img src="images/2022-Yamaha-XSR900-Legend-Blue.jpg" width="100%" height="400px" alt="na">
+        <h1>XSR900</h1>
+    </div>
+</div>
+</div>
+<hr>
+    <footer>
+        <div class="footer1">
+
+
+            <div class=" foot">
+                <h2>Products</h2>
+                <ul>
+                    <li><a href="#">Bikes</a> </li>
+                    <li><a href="#">Scooters</a> </li>
+                </ul>
+            </div>
+            <div class=" foot">
+                <h2>Services</h2>
+                <ul>
+                    <li><a href="#">Maintenace</a> </li>
+                    <li><a href="#">Extended Warranty</a> </li>
+                    <li><a href="#">Skill Development</a> </li>
+                    <li><a href="#">Service Campaign</a> </li>
+                    <li><a href="#">Customer Education</a> </li>
+                </ul>
+            </div>
+            <div class=" foot">
+                <h2>Dealer Network</h2>
+                <ul>
+                    <li><a href="#">Dealer Location</a> </li>
+                    <li><a href="#">Virtual Store</a> </li>
+                </ul>
+            </div>
+
+
+            <div class=" foot">
+                <h2>Buyer's Guide</h2>
+                <ul>
+                    <li><a href="#">Model Comparison</a> </li>
+                    <li><a href="#">Getting Started</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class=" foot">
+                <h2>Parts</h2>
+                <ul>
+                    <li><a href="#">Consumable Parts</a> </li>
+                    <li><a href="#">Helmet</a> </li>
+                    <li><a href="#">Yamalube</a> </li>
+                </ul>
+            </div>
+
+
+            <div class=" foot">
+                <h2>Media</h2>
+                <ul>
+                    <li><a href="#">What's New</a> </li>
+                    <li><a href="#">Yamaha News</a> </li>
+                    <li><a href="#">Videos</a> </li>
+                    <li><a href="#">Press Kit</a> </li>
+                    <li><a href="#">Images</a> </li>
+                </ul>
+            </div>
+            <div class=" foot">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><a href="#">Products Enquiry</a> </li>
+                    <li><a href="#">Personal Enquiry</a> </li>
+                    <li><a href="#">Corporate Enquiry</a> </li>
+                </ul>
+            </div>
+            <div class=" foot">
+                <h2>About Us</h2>
+                <ul>
+                    <li><a href="#">Company Profile</a> </li>
+                    <li><a href="#">Corporate Governance</a> </li>
+                    <li><a href="#">Awards</a> </li>
+                    <li><a href="#">Racing</a> </li>
+                    <li><a href="#">Manufacturing</a> </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </footer>
+</body>
+</html>
